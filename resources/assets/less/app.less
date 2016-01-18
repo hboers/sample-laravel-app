@@ -1,0 +1,100 @@
+@import "bootstrap/bootstrap";
+@import "dmitryf/elements";
+
+@btn-font-weight: 300;
+@font-family-sans-serif: "Roboto", Helvetica, Arial, sans-serif;
+
+
+body, label, .checkbox label {
+	font-weight: 300;
+}
+
+img.profile {
+
+    height: 32px;
+    width: 32px;
+   	float: left;
+
+   	margin-right:1em;
+}
+
+
+.note {
+
+    div:nth-child(1) {
+        background-color:#FCF997;
+        .rounded(5px);
+        .drop-shadow(0, 2px, 4px, 0.2);
+    }
+
+    div:nth-child(2), div:nth-child(3), div:nth-child(4) {
+        padding-top:.2em;
+    }
+    div:nth-child(2), div:nth-child(3) {
+        font-size: x-small;
+    }
+
+    div:nth-child(4)  {
+        text-align: right;
+        .btn {
+            padding: 2px 7px;
+        }
+    }
+}
+
+#div_photo {
+    img {
+        .rounded(10px);
+        .drop-shadow(0, 2px, 4px, 0.2);
+    }
+}
+
+table.table tbody tr:hover {
+    cursor: pointer;
+    .drop-shadow(0, 2px, 4px, 0.2)
+}
+
+#map_canvas {
+    min-width: 256px;
+    min-height: 256px;
+    .rounded(10px);
+    .drop-shadow(0,2px, 4px, 0.2)
+}
+
+.map_container{
+    position: relative;
+    width: 100%;
+    /* Ratio  e.g. 16:9 ( 100%/16*9 = 56.25% ) */
+    padding-bottom: 75%; 
+}
+
+.map_container .map_canvas{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    margin: 0;
+    padding: 0;
+}
+
+.form-group {
+    label {
+        font-weight: bold;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+.objects {
+
+    .btn {
+        width:100%;
+        margin: .5em 0;
+        text-align: left;
+        overflow: hidden;
+        white-space: nowrap;
+    }
+}
+
+
